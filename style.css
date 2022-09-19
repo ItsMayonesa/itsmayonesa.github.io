@@ -3,10 +3,11 @@
 }
 
 body {
-    font-family: 'Lato', 'Arial', sans-serif !important;
+    font-family: 'Lato', 'Arial', system-ui ,sans-serif !important;
     background-color: #efefef;
     overflow: hidden;
     user-select: none;
+    -webkit-user-select: none;
 }
 
 .material-symbols-rounded {
