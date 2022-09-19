@@ -1,13 +1,78 @@
 <!doctype html>
-<html>
+<html lang="en-us">
 <head>
-<title>Bajo construccion...</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css'>
+
+    <script src="https://kit.fontawesome.com/646071bd05.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D80D8M8186"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-D80D8M8186');
+    </script>
+
+    <meta charset="UTF-8">
+    <title>ItsMayonesa - Inicio</title>
 </head>
+
+<noscript>
+    <style>
+        #page-content {
+            display: none !important;
+        }
+    </style>
+    
+    <div class="noscript">
+        <object data="svg/warning.svg"></object>
+        <br/>
+        <p>Please enable JavaScript to use this site</p>
+    </div>
+</noscript>
+
 <body>
-    <p>Hola, soy ItsMayonesa. YouTuber y programador de cositas random.</p>
-    <br/>
-    <a href="https://www.youtube.com/c/ItsMayonesa668">Mi canal de YouTube</a>
-    <br/>
-    <p>Mi pagina esta bajo construccion. Un honor por haberte pasado por aca 👋</p>
+    <div id="ie-unsupported">
+        <object data="svg/ie.svg"></object>
+        <br/>
+        <p>This site does not support Internet Explorer.</p>
+    </div>
+
+    <div id="page-content">
+        <div class="topbar">
+            <div class="logo-text">
+                <p>ItsMayonesa</p>
+            </div>
+            <div class="accountOptions">
+                <div class="settingsButton"><i class="fa-solid fa-gear"></i>
+                    <div class="tooltip">Settings</div>
+                </div>
+                <div class="notifButton"><i class="fa-solid fa-bell"></i>
+                     <div class="tooltip">Notifications</div>
+                </div>
+                <div class="loginButton"><i class="fa-solid fa-right-to-bracket"></i>
+                    <div class="tooltip">Login</div>
+                </div>
+                <div class="accountButton"><i class="fa-solid fa-circle-user"></i>
+                    <div class="tooltip">My Account</div>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <ul class="sidebuttons">
+                <!--<div class="sidebutton" id="home">
+                    <i class='bx bxs-home'></i>
+                    <p>Home</p>
+                </div>-->
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
 </body>
 </html>
