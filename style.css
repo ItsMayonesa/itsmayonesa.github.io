@@ -2,12 +2,14 @@
     margin: 0;
 }
 
+/* MAIN */
+
 body {
-    font-family: 'Lato', 'Arial', system-ui ,sans-serif !important;
+    font-family: 'Lato', 'Helvetica Neue', "Arial", system-ui, sans-serif !important;
     background-color: #efefef;
-    overflow: hidden;
     user-select: none;
     -webkit-user-select: none;
+    -moz-user-select: none;
 }
 
 .material-symbols-rounded {
@@ -61,7 +63,7 @@ body {
     justify-content: space-between;
     background-color: #0077ff;
     padding: 5px 5%;
-    z-index: 2;
+
 }
 
 .logo-text {
@@ -70,7 +72,6 @@ body {
     padding: 0.1px 0.1%;
     font-size: 25px;
     color: white;
-    z-index: 2;
 }
 
 .logo-text p {
@@ -135,17 +136,19 @@ body {
     border-color: transparent transparent black transparent;
 }
 
+/* SIDEBAR */
+
 .sidebar {
     height: 100%;
     width: 250px;
     position: fixed;
     display: inline-block;
-    z-index: 1;
     top: 5;
     left: 0;
     background-color: #dddddd;
     overflow-x: hidden;
     overflow-y: hidden;
+
 }
 
 .sidebar-test1 {
@@ -181,7 +184,6 @@ body {
 
 .sidebutton i {
     vertical-align: middle;
-    font-size: 30px;
 }
 
 .sidebutton-test1 {
@@ -206,8 +208,72 @@ body {
     height: 100%;
     width: 250px;
     display: inline-block;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+    text-align: center;
     font-size: 24px;
     vertical-align: middle;
     padding: 2px;
     overflow: hidden;
+
 }
+
+.sidebuttons ul {
+    display: inline-block;
+    position: relative;
+
+}
+
+.sidebar ul.sidebuttons li {
+    cursor: default;
+    text-decoration: none;
+    text-align: left;
+    color: #000;
+    margin-top: 16px;
+    margin-left: 8px;
+
+}
+
+.sidebar ul.sidebuttons li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #0077ff;
+}
+
+.sidebar ul.sidebuttons li:hover i {
+    color: #0077ff;
+}
+
+.sidebar ul.sidebuttons li.bottom {
+    margin-top: 32px;
+
+}
+
+.sidebar-bottom li {
+    display: block;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    transform: translateX(-10%);
+    bottom: 10%;
+
+}
+
+/* CONTENT */
+
+.content {
+    margin: 8px;
+    display: flex;
+    flex-flow: column;
+    flex: 1 1 auto;
+    transform: translate(250px, 46.19px);
+    width: 100%;
+    height: calc(100% - 46.19px);
+    z-index: 2;
+    top: 0;
+    position: fixed;
+}
+
+/*+250*+/
